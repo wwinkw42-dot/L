@@ -1,0 +1,15 @@
+<Page x:Class="AuthApp.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <StackPanel Margin="30" VerticalAlignment="Center">
+        <TextBlock Text="Авторизация" FontSize="20" Margin="0,0,0,15"/>
+        <TextBlock Text="Логин"/>
+        <!-- AutomationId задан явно -->
+        <TextBox x:Name="LoginBox" AutomationProperties.AutomationId="LoginTextBox" Margin="0,2,0,10"/>
+        <TextBlock Text="Пароль"/>
+        <!-- только x:Name -->
+        <PasswordBox x:Name="PasswordBox" Margin="0,2,0,10"/>
+        <Button x:Name="LoginButton" Content="Войти" Click="LoginButton_Click" Height="28"/>
+        <TextBlock x:Name="ErrorText" Foreground="Red" Margin="0,10,0,0" TextWrapping="Wrap"/>
+    </StackPanel>
+</Page>
